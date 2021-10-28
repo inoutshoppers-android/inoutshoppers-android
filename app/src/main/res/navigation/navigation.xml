@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/login">
+
+    <fragment
+        android:id="@+id/login"
+        android:name="com.example.inoutshoppers.authentication.Login"
+        android:label="Login"
+        tools:layout="@layout/login" >
+        <action
+            android:id="@+id/action_login_to_signUp"
+            app:destination="@id/signUp" />
+        <action
+            android:id="@+id/action_login_to_home"
+            app:destination="@id/home" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUp"
+        android:name="com.example.inoutshoppers.authentication.SignUp"
+        android:label="Sign Up"
+        tools:layout="@layout/sign_up" >
+        <argument
+            android:name="emailAddress"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_signUp_to_home"
+            app:destination="@id/home" />
+    </fragment>
+    <fragment
+        android:id="@+id/home"
+        android:name="com.example.inoutshoppers.home.Home"
+        android:label="Home"
+        tools:layout="@layout/home" >
+        <action
+            android:id="@+id/action_home_to_storeSearch"
+            app:destination="@id/storeSearch" />
+    </fragment>
+    <fragment
+        android:id="@+id/storeSearch"
+        android:name="com.example.inoutshoppers.store.StoreSearch"
+        android:label="Store Search"
+        tools:layout="@layout/store_search" >
+        <action
+            android:id="@+id/action_storeSearch_to_itemList"
+            app:destination="@id/itemList" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemList"
+        android:name="com.example.inoutshoppers.item.ItemList"
+        android:label="Shopping List"
+        tools:layout="@layout/item_list" >
+        <action
+            android:id="@+id/action_itemList_to_shoppingNavigation"
+            app:destination="@id/shoppingNavigation" />
+    </fragment>
+    <fragment
+        android:id="@+id/shoppingNavigation"
+        android:name="com.example.inoutshoppers.shopping_navigation.ShoppingNavigation"
+        android:label="shopping_navigation"
+        tools:layout="@layout/shopping_navigation" />
+</navigation>

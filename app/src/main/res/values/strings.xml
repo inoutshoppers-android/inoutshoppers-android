@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">In&amp;Out Shoppers</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string name="login_login_button">Login</string>
+    <string name="login_sign_up_button">Sign Up</string>
+    <string name="sign_up_title">Sign Up</string>
+    <string name="sign_up_password_hint">Password</string>
+    <string name="sign_up_verify_password_hint">Verify Password</string>
+    <string name="sign_up_button">Sign Up</string>
+</resources>
