@@ -10,23 +10,23 @@
         android:id="@+id/shoppingListTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Shopping List"
+        android:text="@string/item_list_title"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_margin="40dp"
-        android:textSize="40sp" />
+        android:layout_margin="@dimen/item_list_margin"
+        android:textSize="@dimen/title_text_size" />
 
     <EditText
         android:id="@+id/searchEditText"
         android:layout_height="wrap_content"
         android:layout_width="0dp"
-        android:hint="Item"
+        android:hint="@string/item_list_item_search_hint"
         app:layout_constraintTop_toBottomOf="@id/shoppingListTitle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_weight="2"
-        android:layout_margin="40dp"/>
+        android:layout_margin="@dimen/item_list_margin"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/shoppingListRecyclerView"
@@ -35,7 +35,7 @@
         app:layout_constraintTop_toBottomOf="@id/searchEditText"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_margin="40dp" />
+        android:layout_margin="@dimen/item_list_margin" />
 
     <Button
         android:id="@+id/shopButton"
@@ -43,9 +43,9 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/shoppingListRecyclerView"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_margin="@dimen/login_margin"
+        android:layout_margin="@dimen/item_list_margin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:text="Start Shopping"/>
+        android:text="@string/item_list_start_button"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

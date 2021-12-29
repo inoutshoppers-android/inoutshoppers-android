@@ -1,13 +1,26 @@
 <resources>
     <string name="app_name">In&amp;Out Shoppers</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
     <string name="login_email_hint">Email</string>
     <string name="login_password_hint">Password</string>
     <string name="login_login_button">Login</string>
     <string name="login_sign_up_button">Sign Up</string>
+
     <string name="sign_up_title">Sign Up</string>
     <string name="sign_up_password_hint">Password</string>
     <string name="sign_up_verify_password_hint">Verify Password</string>
     <string name="sign_up_button">Sign Up</string>
+
+    <string name="home_greeting">Hello, User</string>
+    <string name="home_start_button">Start Shopping</string>
+
+    <string name="item_list_title">Shopping List</string>
+    <string name="item_list_item_search_hint">Item</string>
+    <string name="item_list_start_button">Start Shopping</string>
+
+    <string name="sign_up_email_hint">Email</string>
+
+    <string name="store_search_title_text">Find Your Store</string>
+    <string name="store_search_store_name_search_hint">Store Name</string>
+    <string name="store_search_search_button_text">Search</string>
 </resources>

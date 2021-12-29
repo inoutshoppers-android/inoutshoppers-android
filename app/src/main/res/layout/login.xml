@@ -14,8 +14,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:text="@string/app_name"
-        android:layout_margin="40dp"
-        android:textSize="40sp"/>
+        android:layout_margin="@dimen/login_margin"
+        android:textSize="@dimen/title_text_size"/>
 
     <EditText
         android:id="@+id/emailAddress"
