@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "362379921185",
-    "project_id": "inandoutshoppers",
-    "storage_bucket": "inandoutshoppers.appspot.com"
+    "project_number": "80861668467",
+    "project_id": "inoutshoppers-82419",
+    "storage_bucket": "inoutshoppers-82419.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:362379921185:android:2b73ea59cff853381ce060",
+        "mobilesdk_app_id": "1:80861668467:android:b8163905136ab632fb3606",
         "android_client_info": {
           "package_name": "com.example.inoutshoppers"
         }
       },
       "oauth_client": [
         {
-          "client_id": "362379921185-rncodg759o9c3nlbicm89fklbrn5u2oi.apps.googleusercontent.com",
+          "client_id": "80861668467-4cppce5tql0mhdi309rjuf01ip7j2fau.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAWmxUg0PTz4TH2pCz4T5mGBdRw-F8mPpc"
+          "current_key": "AIzaSyCHKCSifg1nPA2f-XWJZHYCa1xiPITpS_8"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "362379921185-rncodg759o9c3nlbicm89fklbrn5u2oi.apps.googleusercontent.com",
+              "client_id": "80861668467-4cppce5tql0mhdi309rjuf01ip7j2fau.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
