@@ -55,6 +55,9 @@
         <action
             android:id="@+id/action_itemList_to_shoppingNavigation"
             app:destination="@id/shoppingNavigation" />
+        <argument android:name="selected_store"
+            app:argType="com.google.android.libraries.places.api.model.Place"
+            app:nullable="true" />
     </fragment>
     <fragment
         android:id="@+id/shoppingNavigation"
