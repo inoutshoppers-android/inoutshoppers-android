@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">In&amp;Out Shoppers</string>
 
+    <string name="api_key">Insert Key here</string>
+
     <string name="login_email_hint">Email</string>
     <string name="login_password_hint">Password</string>
     <string name="login_login_button">Login</string>
@@ -23,4 +25,5 @@
     <string name="store_search_title_text">Find Your Store</string>
     <string name="store_search_store_name_search_hint">Store Name</string>
     <string name="store_search_search_button_text">Search</string>
+    <string name="store_search_select_store">Shop Store</string>
 </resources>

@@ -17,12 +17,23 @@
         android:layout_margin="@dimen/item_list_margin"
         android:textSize="@dimen/title_text_size" />
 
+    <TextView
+        android:id="@+id/selectedStoreInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/shoppingListTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="@dimen/item_list_margin"
+        />
+
     <EditText
         android:id="@+id/searchEditText"
         android:layout_height="wrap_content"
         android:layout_width="0dp"
         android:hint="@string/item_list_item_search_hint"
-        app:layout_constraintTop_toBottomOf="@id/shoppingListTitle"
+        app:layout_constraintTop_toBottomOf="@id/selectedStoreInfo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_weight="2"
