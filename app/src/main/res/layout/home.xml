@@ -13,11 +13,11 @@
         android:layout_height="wrap_content"
         android:text="InOutShoppers"
         android:textColor="@color/yellow"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="@dimen/title_text_size"
         app:layout_constraintBottom_toTopOf="@id/loginButton"
-        android:textSize="@dimen/title_text_size" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/loginButton"
@@ -53,9 +53,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/icon"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="178dp"
-        tools:layout_editor_absoluteY="142dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="142dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

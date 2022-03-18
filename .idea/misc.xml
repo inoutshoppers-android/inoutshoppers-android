@@ -13,8 +13,11 @@
         <entry key="..\:/Users/Jay/In-Out-Shoppers/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/Jay/In-Out-Shoppers/app/src/main/res/layout/home.xml" value="0.25" />
         <entry key="..\:/Users/Jay/In-Out-Shoppers/app/src/main/res/layout/item_list.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.33106884057971014" />
         <entry key="app/src/main/res/layout/home.xml" value="0.375" />
         <entry key="app/src/main/res/layout/login.xml" value="0.32518115942028986" />
+        <entry key="app/src/main/res/layout/sign_up.xml" value="0.33106884057971014" />
+        <entry key="app/src/main/res/layout/test.xml" value="0.33106884057971014" />
       </map>
     </option>
   </component>
