@@ -24,6 +24,10 @@ class Home : Fragment() {
             view.findNavController().navigate(HomeDirections.actionHomeToStoreSearch())
         }
 
+        binding.addItemButton.setOnClickListener { view :View ->
+            view.findNavController().navigate(HomeDirections.actionHomeToAddItem())
+        }
+
         return binding.root
     }
 
