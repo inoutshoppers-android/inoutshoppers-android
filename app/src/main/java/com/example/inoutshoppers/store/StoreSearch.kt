@@ -1,9 +1,6 @@
 package com.example.inoutshoppers.store
 
-import android.net.Uri
 import android.os.Bundle
-import android.os.Parcel
-import android.os.Parcelable
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -14,8 +11,6 @@ import androidx.navigation.findNavController
 import com.example.inoutshoppers.R
 import com.example.inoutshoppers.databinding.StoreSearchBinding
 import com.google.android.gms.common.api.Status
-import com.google.android.gms.maps.model.LatLng
-import com.google.android.gms.maps.model.LatLngBounds
 import com.google.android.libraries.places.api.Places
 import com.google.android.libraries.places.api.model.*
 import com.google.android.libraries.places.widget.AutocompleteSupportFragment
@@ -54,7 +49,7 @@ class StoreSearch : Fragment() {
                 Log.e(TAG,"Place selection error ${p0.statusMessage}")
             }
 
-        });
+        })
 
         binding.selectStoreButton.setOnClickListener { view : View ->
             if (selectedStore == null) {
