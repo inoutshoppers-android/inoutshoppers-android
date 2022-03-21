@@ -22,6 +22,8 @@
 
     <string name="sign_up_email_hint">Email</string>
 
+    <string name="back_previous_page">Back</string>
+
     <string name="store_search_title_text">Find Your Store</string>
     <string name="store_search_store_name_search_hint">Store Name</string>
     <string name="store_search_search_button_text">Search</string>
