@@ -35,6 +35,11 @@
         android:label="Home"
         tools:layout="@layout/home" >
         <action
+            android:id="@+id/action_home_to_storeSearch"
+            app:destination="@id/storeSearch" />
+        <action
+            android:id="@+id/action_home_to_addItem"
+            app:destination="@id/addItem" />
             android:id="@+id/log in"
             app:destination="@id/login" />
         <action
@@ -65,6 +70,11 @@
     <fragment
         android:id="@+id/shoppingNavigation"
         android:name="com.example.inoutshoppers.shopping_navigation.ShoppingNavigation"
-        android:label="shopping_navigation"
+        android:label="Navigation"
         tools:layout="@layout/shopping_navigation" />
+    <fragment
+        android:id="@+id/addItem"
+        android:name="com.example.inoutshoppers.item.AddItem"
+        android:label="Add Item"
+        tools:layout="@layout/add_item"/>
 </navigation>
