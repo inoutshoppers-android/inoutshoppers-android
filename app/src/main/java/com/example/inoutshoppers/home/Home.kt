@@ -20,7 +20,7 @@ class Home : Fragment() {
         // Inflate the layout for this fragment
         val binding = HomeBinding.inflate(inflater, container, false)
 
-        binding.shopButton.setOnClickListener { view : View ->
+        binding.findStoreButton.setOnClickListener { view : View ->
             view.findNavController().navigate(HomeDirections.actionHomeToStoreSearch())
         }
 
