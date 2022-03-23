@@ -34,7 +34,7 @@ class SignUp : Fragment() {
 
     private fun configureButtons() {
         with(binding) {
-            signUpButton.setOnClickListener {
+            signUpButton2.setOnClickListener {
                 if (password.text.toString() != passwordVerify.text.toString()) {
                     showToast("Passwords do not match")
                 } else if (password.text.isNotEmpty() && emailAddress.text.isNotEmpty()) {

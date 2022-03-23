@@ -7,16 +7,6 @@
     tools:context=".authentication.SignUp">
 
     <Button
-        android:id="@+id/back"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="76dp"
-        android:text="@string/back_previous_page"
-        app:layout_constraintBottom_toTopOf="@+id/emailAddress"
-        app:layout_constraintEnd_toStartOf="@+id/signUpTitle" />
-
-    <Button
         android:id="@+id/signUpButton2"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
