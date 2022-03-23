@@ -6,44 +6,52 @@
     android:layout_height="match_parent"
     tools:context=".authentication.Login">
 
+
     <TextView
         android:id="@+id/loginTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/login_margin"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="64dp"
         android:fontFamily="@font/comfortaa"
         android:text="Log In"
         android:textColor="@color/black"
         android:textSize="@dimen/title_text_size"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/emailAddress"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="332dp"
+        android:layout_height="47dp"
         android:layout_margin="@dimen/login_margin"
-        android:backgroundTint="@color/green"
+        android:background="@drawable/custom_input"
         android:fontFamily="@font/comfortaa"
         android:hint="@string/login_email_hint"
         android:inputType="textEmailAddress"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
         android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/loginTitle" />
 
     <EditText
         android:id="@+id/password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="332dp"
+        android:layout_height="47dp"
         android:layout_margin="@dimen/login_margin"
+        android:background="@drawable/custom_input"
         android:fontFamily="@font/comfortaa"
         android:hint="@string/login_password_hint"
-        android:backgroundTint="@color/green"
         android:inputType="textPassword"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
         android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/emailAddress" />
 
@@ -51,33 +59,35 @@
         android:id="@+id/loginButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/password"
-        app:layout_constraintStart_toStartOf="parent"
         android:layout_margin="@dimen/login_margin"
-        app:layout_constraintEnd_toEndOf="@id/signUpButton"
-        android:text="@string/login_login_button"/>
+        android:layout_marginTop="20dp"
+        android:text="@string/login_login_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
 
     <Button
         android:id="@+id/signUpButton"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/password"
-        app:layout_constraintStart_toStartOf="@id/loginButton"
+        android:layout_height="48dp"
         android:layout_margin="@dimen/login_margin"
+        android:layout_marginTop="8dp"
+        android:text="@string/login_sign_up_button"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:text="@string/login_sign_up_button"/>
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginButton"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/Back"
-        android:layout_width="87dp"
-        android:layout_height="35dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="80dp"
-        android:background="#D2DEC6"
-        android:fontFamily="@font/comfortaa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="76dp"
         android:text="@string/back_previous_page"
-        android:textSize="12sp"
         app:layout_constraintBottom_toTopOf="@+id/emailAddress"
         app:layout_constraintEnd_toStartOf="@+id/loginTitle" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
