@@ -14,7 +14,7 @@
             android:id="@+id/action_login_to_signUp"
             app:destination="@id/signUp" />
         <action
-            android:id="@+id/find store2"
+            android:id="@+id/find_store2"
             app:destination="@id/storeSearch" />
     </fragment>
     <fragment
@@ -26,7 +26,7 @@
             android:name="emailAddress"
             app:argType="string" />
         <action
-            android:id="@+id/find store"
+            android:id="@+id/find_store"
             app:destination="@id/storeSearch" />
     </fragment>
     <fragment
@@ -43,7 +43,7 @@
             android:id="@+id/log in"
             app:destination="@id/login" />
         <action
-            android:id="@+id/sign up"
+            android:id="@+id/sign_up"
             app:destination="@id/signUp" />
     </fragment>
     <fragment
