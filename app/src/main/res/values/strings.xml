@@ -19,6 +19,7 @@
     <string name="item_list_title">Shopping List</string>
     <string name="item_list_item_search_hint">Item</string>
     <string name="item_list_start_button">Start Shopping</string>
+    <string name="item_add">Add Item</string>
 
     <string name="sign_up_email_hint">Email</string>
 

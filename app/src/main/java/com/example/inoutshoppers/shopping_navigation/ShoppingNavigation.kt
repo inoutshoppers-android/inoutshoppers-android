@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.navArgs
 import com.example.inoutshoppers.Permissions.Permissions
 import com.example.inoutshoppers.databinding.ShoppingNavigationBinding
 import com.google.android.gms.maps.GoogleMap
@@ -18,6 +19,11 @@ import com.google.android.gms.maps.model.MarkerOptions
 
 class ShoppingNavigation : Fragment(), OnMapReadyCallback {
 
+    companion object {
+        const val SHOPPING_ITEMS = "SHOPPING_ITEMS"
+        const val STORE = "STORE";
+    }
+
     private lateinit var binding: ShoppingNavigationBinding
     private lateinit var mapView: MapView
     private var permissionGranted = false
@@ -27,6 +33,7 @@ class ShoppingNavigation : Fragment(), OnMapReadyCallback {
         savedInstanceState: Bundle?
     ): View? {
         binding = ShoppingNavigationBinding.inflate(inflater, container, false)
+        val args: ShoppingNavigationArgs by navArgs()
         initGoogleMaps(savedInstanceState)
         return binding.root
     }
