@@ -14,6 +14,8 @@ import androidx.navigation.findNavController
 import com.example.inoutshoppers.InOutShoppersApplication
 import com.example.inoutshoppers.R
 import com.example.inoutshoppers.databinding.SignUpBinding
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 import kotlinx.coroutines.launch
 
 class SignUp : Fragment() {
@@ -38,7 +40,7 @@ class SignUp : Fragment() {
                 if (password.text.toString() != passwordVerify.text.toString()) {
                     showToast("Passwords do not match")
                 } else if (password.text.isNotEmpty() && emailAddress.text.isNotEmpty()) {
-                    viewModel.signUpUser(email = password.text.toString(), emailAddress.text.toString())
+                    viewModel.signUpUser(email = emailAddress.text.toString(), password = password.text.toString())
                 }
             }
         }
