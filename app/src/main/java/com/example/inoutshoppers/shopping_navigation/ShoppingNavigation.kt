@@ -97,6 +97,10 @@ class ShoppingNavigation : Fragment(), OnMapReadyCallback {
     override fun onMapReady(map: GoogleMap) {
         googleMap = map
         setCameraView()
+        if (!permissionGranted || !Permissions.checkLocationPermissionGranted(requireActivity())) {
+            return
+        }
+        googleMap.isMyLocationEnabled = true
     }
 
     override fun onRequestPermissionsResult(
