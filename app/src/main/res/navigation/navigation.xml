@@ -42,10 +42,7 @@
             app:destination="@id/addItem" />
         <action
             android:id="@+id/action_home_to_login"
-            app:destination="@id/login" /><![CDATA[
-            android:id="@+id/log in"
             app:destination="@id/login" />
-        ]]>
     </fragment>
     <fragment
         android:id="@+id/storeSearch"
@@ -72,7 +69,11 @@
         android:id="@+id/shoppingNavigation"
         android:name="com.example.inoutshoppers.shopping_navigation.ShoppingNavigation"
         android:label="Navigation"
-        tools:layout="@layout/shopping_navigation" />
+        tools:layout="@layout/shopping_navigation" >
+        <argument
+            android:name="storeBundle"
+            app:argType="android.os.Bundle" />
+    </fragment>
     <fragment
         android:id="@+id/addItem"
         android:name="com.example.inoutshoppers.item.AddItem"

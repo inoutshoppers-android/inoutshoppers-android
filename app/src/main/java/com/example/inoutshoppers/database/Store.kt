@@ -15,8 +15,7 @@ data class StoreSection(
 )
 
 data class StoreItem (
-    val name: String,
-    val price: Double?,
-    val longitude: Double,
-    val latitude: Double,
+    val latitude: Double = 0.0,
+    val longitude: Double = 0.0,
+    val name: String = "",
 )
