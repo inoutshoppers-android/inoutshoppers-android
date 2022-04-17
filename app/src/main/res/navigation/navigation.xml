@@ -71,7 +71,7 @@
         android:label="Navigation"
         tools:layout="@layout/shopping_navigation" >
         <argument
-            android:name="bundle"
+            android:name="storeBundle"
             app:argType="android.os.Bundle" />
     </fragment>
     <fragment

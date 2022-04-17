@@ -41,7 +41,7 @@ class ItemList : Fragment() {
             if (store != null) {
                 val bundle = Bundle()
                 bundle.putParcelable(ShoppingNavigation.STORE, store)
-                bundle.putStringArray(ShoppingNavigation.SHOPPING_ITEMS, itemList.toTypedArray())
+                bundle.putStringArrayList(ShoppingNavigation.SHOPPING_ITEMS, ArrayList(itemList))
                 view.findNavController().navigate(ItemListDirections.actionItemListToShoppingNavigation(bundle))
             }
         }
