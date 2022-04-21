@@ -5,15 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.viewModels
 import androidx.navigation.findNavController
-import androidx.navigation.fragment.findNavController
 import com.example.inoutshoppers.InOutShoppersApplication
-import com.example.inoutshoppers.R
-import com.example.inoutshoppers.authentication.AuthViewModelFactory
-import com.example.inoutshoppers.authentication.LoginViewModel
 import com.example.inoutshoppers.databinding.HomeBinding
-import com.example.inoutshoppers.databinding.SignUpBinding
 import com.google.firebase.auth.FirebaseAuth
 
 class Home : Fragment() {
