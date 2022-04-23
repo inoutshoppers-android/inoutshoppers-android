@@ -19,3 +19,8 @@ data class StoreItem (
     val longitude: Double = 0.0,
     val name: String = "",
 )
+
+data class UserLocation(
+    val latitude: Double,
+    val longitude: Double
+)
