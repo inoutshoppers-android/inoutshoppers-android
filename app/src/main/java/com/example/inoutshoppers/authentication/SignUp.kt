@@ -40,7 +40,7 @@ class SignUp : Fragment() {
                 if (password.text.toString() != passwordVerify.text.toString()) {
                     showToast("Passwords do not match")
                 } else if (password.text.isNotEmpty() && emailAddress.text.isNotEmpty()) {
-                    viewModel.signUpUser(email = emailAddress.text.toString(), password = password.text.toString())
+                    viewModel.signUpUser(email = emailAddress.text.toString(), password = password.text.toString(), username = username.text.toString())
                 }
             }
         }
