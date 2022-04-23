@@ -37,7 +37,7 @@
         android:layout_margin="@dimen/login_margin"
         android:layout_marginTop="60dp"
         android:background="@drawable/custom_input"
-        android:hint="@string/username"
+        android:hint="@string/sign_up_username_hint"
         android:inputType="textEmailAddress"
         android:paddingStart="12dp"
         android:paddingEnd="12dp"
