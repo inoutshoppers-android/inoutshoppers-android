@@ -103,7 +103,7 @@ class AddItem : Fragment() {
         binding.addItemButton.setOnClickListener { view : View ->
 
             if (selectedStore == null) {
-            Toast.makeText(requireContext(), "Must select store", Toast.LENGTH_LONG).show()
+                Toast.makeText(requireContext(), "Must select store", Toast.LENGTH_LONG).show()
             }
             else if (binding.itemNameEdit.text.isEmpty()) {
                 Toast.makeText(requireContext(), "Must enter item name", Toast.LENGTH_LONG).show()
@@ -114,16 +114,20 @@ class AddItem : Fragment() {
                         Log.i(TAG, "Current location: $location")
                         var item = binding.itemNameEdit.text.toString()
                         // Add to database
-                        dao.addItem(selectedStore!!, item, location!!,
-                            {
-                                Toast.makeText(requireContext(), "$item added to ${selectedStore!!.name}", Toast.LENGTH_LONG).show()
-                                view.findNavController()
-                                    .navigateUp()
-                            },
-                            {
-                                Toast.makeText(requireContext(), "Unable to add item. Please try again.", Toast.LENGTH_LONG).show()
-                            })
-
+                        if (location == null) {
+                            Toast.makeText(requireContext(), "Error: Current location not found", Toast.LENGTH_LONG).show()
+                        }
+                        else {
+                            dao.addItem(selectedStore!!, item, location!!,
+                                {
+                                    Toast.makeText(requireContext(), "$item added to ${selectedStore!!.name}", Toast.LENGTH_LONG).show()
+                                    view.findNavController()
+                                        .navigateUp()
+                                },
+                                {
+                                    Toast.makeText(requireContext(), "Unable to add item. Please try again.", Toast.LENGTH_LONG).show()
+                                })
+                        }
                     }
             }
         }

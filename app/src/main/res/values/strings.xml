@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">In&amp;Out Shoppers</string>
 
-    <string name="api_key">AIzaSyBxC_P_FeOFpzL1E1OQM5QjacNq70d3lFw</string>
+    <string name="api_key">API_KEY</string>
 
     <string name="login_email_hint">Email</string>
     <string name="login_password_hint">Password</string>
@@ -9,6 +9,7 @@
     <string name="login_sign_up_button">Sign Up</string>
 
     <string name="sign_up_title">Sign Up</string>
+    <string name="sign_up_username_hint">Username</string>
     <string name="sign_up_password_hint">Password</string>
     <string name="sign_up_verify_password_hint">Verify Password</string>
     <string name="sign_up_button">Sign Up</string>
