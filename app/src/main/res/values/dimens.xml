@@ -8,4 +8,6 @@
     <dimen name="item_list_margin">40dp</dimen>
     <dimen name="store_search_margin">40dp</dimen>
 
+    <dimen name="medium">16dp</dimen>
+
 </resources>

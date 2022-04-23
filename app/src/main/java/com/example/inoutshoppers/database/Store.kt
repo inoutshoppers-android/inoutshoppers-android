@@ -24,3 +24,9 @@ data class UserLocation(
     val latitude: Double,
     val longitude: Double
 )
+
+data class UserProfile(
+    val userId: String = "",
+    val totalContribution: Int = 0,
+    val username: String = ""
+)

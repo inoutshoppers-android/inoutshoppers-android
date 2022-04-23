@@ -4,65 +4,186 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/introbackground"
+    android:layout_margin="@dimen/medium"
     tools:context=".home.Home">
 
-
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/welomeText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/app_name"
-        android:textColor="@color/yellow"
-        android:textSize="@dimen/title_text_size"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Hi, %s \nWelcome to \nyour dashboard"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.374" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:layout_width="61dp"
-        android:layout_height="72dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/contributionIcon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="@dimen/store_search_margin"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/icon"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@id/welomeText"
+        app:srcCompat="@drawable/ic_star" />
 
-
-    <Button
-        android:id="@+id/addItemButton"
-        android:layout_width="119dp"
-        android:layout_height="59dp"
-        android:layout_margin="@dimen/home_margin"
-        android:layout_marginTop="196dp"
-        android:text="@string/add_item_button"
-        app:layout_constraintBottom_toTopOf="@+id/findStoreButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
-        android:id="@+id/findStoreButton"
-        android:layout_width="147dp"
-        android:layout_height="59dp"
-        android:layout_marginBottom="204dp"
-        android:text="Find Store"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <Button
-        android:id="@+id/signOutButton"
+    <TextView
+        android:id="@+id/contributionText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sign Out"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="32dp" />
+        android:layout_marginStart="@dimen/medium"
+        android:text="Contributions"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/totalContributions"
+        app:layout_constraintStart_toEndOf="@id/contributionIcon"
+        app:layout_constraintTop_toTopOf="@+id/contributionIcon"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <TextView
+        android:id="@+id/totalContributions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/medium"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/contributionIcon"
+        app:layout_constraintStart_toEndOf="@+id/contributionIcon"
+        app:layout_constraintTop_toBottomOf="@+id/contributionText"
+        tools:text="3455" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/addLocationCard"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="@dimen/sign_up_margin"
+        android:layout_marginEnd="@dimen/medium"
+        android:alpha="0.7"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="@id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/totalContributions">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/addLocationText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/medium"
+                android:text="Add Location"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:scaleType="centerInside"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/addLocationText"
+                app:layout_constraintTop_toBottomOf="@id/addLocationText"
+                app:srcCompat="@drawable/ic_add_item" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/startShoppingCard"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="@dimen/medium"
+        android:alpha="0.7"
+        app:cardBackgroundColor="@color/quantum_orange400"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintStart_toEndOf="@id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/medium"
+        app:layout_constraintTop_toBottomOf="@id/totalContributions">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/startShoppingText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/medium"
+                android:text="Start Shopping"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:scaleType="centerInside"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/startShoppingText"
+                app:layout_constraintTop_toBottomOf="@id/startShoppingText"
+                app:srcCompat="@drawable/ic_shopping" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/logoutCard"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="@dimen/sign_up_margin"
+        android:layout_marginEnd="@dimen/medium"
+        android:alpha="0.7"
+        app:cardBackgroundColor="@color/quantum_amber400"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="@id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addLocationCard">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/logoutText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/medium"
+                android:text="Sign out"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:scaleType="centerInside"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/logoutText"
+                app:layout_constraintTop_toBottomOf="@id/logoutText"
+                app:srcCompat="@drawable/ic_logout" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
