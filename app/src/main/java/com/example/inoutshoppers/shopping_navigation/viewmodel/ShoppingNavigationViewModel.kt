@@ -49,6 +49,8 @@ class ShoppingNavigationViewModel : ViewModel() {
                 val storeItem = item.toObject(StoreItem::class.java)
                 if (storeItem != null) {
                     _itemsLocations.value += storeItem
+                } else {
+                    _errorMessage.value = "$itemName not found"
                 }
             }
             .addOnFailureListener {
